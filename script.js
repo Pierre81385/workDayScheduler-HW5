@@ -12,8 +12,6 @@ $("#currentDay").text(date);
 
 //Function to save notes
 
-//var notesArray = [];
-
 function saveNotes() {
   $("input").each(function () {
     var notes = $(this).val();
