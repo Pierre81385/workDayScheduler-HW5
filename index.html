@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+    <div class="container">
+      <!-- Timeblocks go here -->
+      <div class="row">
+        <div class="col-1 hour" data-value="9">9AM</div>
+        <div class="col-10 item">
+          <input type="text" id="textInput1" name="textInput" data-key="nine" />
+        </div>
+        <div class="col-1 item">
+          <input type="button" name="Save" id="save" class="saveBtn" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1 hour" data-value="10">10AM</div>
+        <div class="col-10 item">
+          <input type="text" id="textInput2" name="textInput" data-key="ten" />
+        </div>
+        <div class="col-1 item">
+          <input type="button" name="Save" id="save" class="saveBtn" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1 hour" data-value="11">11AM</div>
+        <div class="col-10 item">
+          <input
+            type="text"
+            id="textInput3"
+            name="textInput"
+            data-key="eleven"
+          />
+        </div>
+        <div class="col-1 item">
+          <input type="button" name="Save" id="save" class="saveBtn" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1 hour" data-value="12">12PM</div>
+        <div class="col-10 item">
+          <input type="text" id="textInput4" name="textInput" data-key="noon" />
+        </div>
+        <div class="col-1 item">
+          <input type="button" name="Save" id="save" class="saveBtn" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1 hour" data-value="13">1PM</div>
+        <div class="col-10 item">
+          <input type="text" id="textInput5" name="textInput" data-key="one" />
+        </div>
+        <div class="col-1 item">
+          <input type="button" name="Save" id="save" class="saveBtn" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1 hour" data-value="14">2PM</div>
+        <div class="col-10 item">
+          <input type="text" id="textInput6" name="textInput" data-key="two" />
+        </div>
+        <div class="col-1 item">
+          <input type="button" name="Save" id="save" class="saveBtn" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1 hour" data-value="15">3PM</div>
+        <div class="col-10 item">
+          <input
+            type="text"
+            id="textInput7"
+            name="textInput"
+            data-key="three"
+          />
+        </div>
+        <div class="col-1 item">
+          <input type="button" name="Save" id="save" class="saveBtn" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1 hour" data-value="16">4PM</div>
+        <div class="col-10 item">
+          <input type="text" id="textInput8" name="textInput" data-key="four" />
+        </div>
+        <div class="col-1 item">
+          <input type="button" name="Save" id="save" class="saveBtn" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1 hour" data-value="17">5PM</div>
+        <div class="col-10 item">
+          <input type="text" id="textInput9" name="textInput" data-key="five" />
+        </div>
+        <div class="col-1 item">
+          <input type="button" name="Save" id="save" class="saveBtn" />
+        </div>
+      </div>
+    </div>
+    <script src="./moment-with-locales.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
+</html>
